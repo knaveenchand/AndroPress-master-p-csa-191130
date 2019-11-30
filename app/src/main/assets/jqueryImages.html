@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Show Image from JSON using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div id="slideshow"></div>
+
+
+<script>
+
+function init(val) {
+
+ $(document).ready(function () {
+
+  var jsonURL = "http://pestoscope.ekrishi.net/api/korkmaz/get_attachmenturls_by_post_v2/?androidpostid="+val;
+  $.getJSON(jsonURL, function (json)
+  {
+    var imgList= "";
+    $.each(json.images, function () {
+        if(this.image != null) {
+      imgList += '<div><img class="response" width="240" height="240" src= "' + this.image + '"></div>';
+        }
+    });
+    $('#slideshow').append(imgList);
+  }); //end of getjson
+
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+}); // end of doc ready
+
+}
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Pestoscope</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_favorite">Add to Archive</string>
+    <string name="action_share">Share</string>
+    <string name="home">Home</string>
+    <string name="comments">Comments</string>
+    <string name="categories">Crops</string>
+    <string name="npm">Non Pesticide Management</string>
+    <string name="queryphoto">Send Query with Photo</string>
+    <string name="loginlogout">Login/Logout</string>
+    <string name="whatisnpm">NPM</string>
+    <string name="npmbasics">NPM Basics</string>
+    <string name="npminsect">Understanding Insect Biology and Behaviour</string>
+    <string name="traps">Traps</string>
+    <string name="solutions">Solutions</string>
+    <string name="archive">Archive</string>
+    <string name="about">About US</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="written_by">Written by :</string>
+    <string name="on_date">on date :</string>
+    <string name="share_with">Share with</string>
+    <string name="share_title">Recommended Article</string>
+    <string name="share_body">I recommend reading %1$s. It\'s link is here! Give it a visit \n %2$s</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="content">Content</string>
+    <string name="submit">Submit</string>
+    <string name="submitting">Sending your comment...</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="comment_status_close_error">Comment Submittion for this post is closed!</string>
+    <string name="comment_submit_success">Your Comment is successfully submited! it will be visible after administrator\'s approval!</string>
+    <string name="retry">Retry</string>
+    <string name="no_data_message">There is no data found! Please check your internet connection or search query then try again!</string>
+    <string name="no_archive_message">You don\'t have any archived data!</string>
+    <string name="no_comment_message">There is no comments on this post! be the first person to start conversation!</string>
+    <string name="crash_report">We are sorry to inform you that the application has crashed, because of an unknown error! Send it\'s report to the developer to solve it!</string>
+    <string name="crash_title">Application Crash!</string>
+    <string name="no_internet">Please check your internet connection!</string>
+    <string name="invalid_email">Invalid Email Adress!</string>
+    <string name="hint_search">Search post...</string>
+    <string name="close_message">Press back again to exit!</string>
+    <string name="added_to_favorites">Post is saved to your archive!</string>
+    <string name="removed_from_favorites">Post is removed from archive!</string>
+    <string name="crop_prompt">Choose a crop</string>
+
+    <!--about page data-->
+    <string name="about_content">ICT for Development.</string>
+    <string name="developer">Developed By : Parishkaar</string>
+    <string name="companey">Technopedia team.</string>
+    <string name="version">Version number 2 (2018/10/18)</string>
+    <string name="social_1_adress">http://mgarebaghi.ir/en/</string>
+    <string name="social_2_adress">http://mgarebaghi.ir/en/</string>
+    <string name="social_3_adress">http://mgarebaghi.ir/en/</string>
+    <string name="social_4_adress">http://mgarebaghi.ir/en/</string>
+    <string name="symptomsheading">Symptoms</string>
+    <string name="managementheading">Management</string>
+    <string name="title_activity_main_grid_crops">MainGridCropsActivity</string>
+    <string name="title_activity_main__grid_">Main_Grid_Activity</string>
+    <string name="title_activity_single_view">SingleViewActivity</string>
+    <string name="title_activity_npmmain">NPM</string>
+    <string name="title_activity_sample_delete">NPM</string>
+    <string name="title_activity_photo_contact_swipe">PhotoContactSwipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_main">Send Query</string>
+    <string name="title_activity_multi_photo">MultiPhotoActivity</string>
+    <string name="title_activity_tabbed_query">TabbedQuery</string>
+    <string name="webviewimagesheading">Images</string>
+
+    <!--Login and resgistration activity text strings-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="fullname">Fullname</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_camera_gallery">Send Query with Photos</string>
+</resources>

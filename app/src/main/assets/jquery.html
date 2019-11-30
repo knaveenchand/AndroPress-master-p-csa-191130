@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+		.loader{width:60px;height:60px;background:0 0;border:10px solid transparent;border-top-color:#f56;border-left-color:#f56;border-radius:50%;animation:loader .75s 10 ease forwards}@keyframes loader{100%{transform:rotate(360deg)}}
+	</style>
+
+</head>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+function init(val) {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj.page.content;
+  } else {
+  	document.getElementById("demo").innerHTML = '<div class="loader"></div>';
+
+  }
+};
+xmlhttp.open("GET", "http://pestoscope.ekrishi.net/api/get_page/?id="+val, true);
+xmlhttp.send();
+}
+
+$( document ).ready(function() {
+
+$('#demo').removeAttr("href");
+// disable all links in a document
+$('a').removeAttr("href");
+});
+</script>
+
+</body>
+</html>

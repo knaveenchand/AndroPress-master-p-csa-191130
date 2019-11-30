@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "432956807583",
+    "firebase_url": "https://pestoscope-parishkaar.firebaseio.com",
+    "project_id": "pestoscope-parishkaar",
+    "storage_bucket": "pestoscope-parishkaar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432956807583:android:c48fb33e2bb0409d",
+        "android_client_info": {
+          "package_name": "ir.parishkaar.wordpressjsonclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432956807583-a5ravu1qmm0rvnvf79rdqpafb4bjvh8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-D7YF_KQlNIgTTj6M9j4DWStpco6Aq5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432956807583-a5ravu1qmm0rvnvf79rdqpafb4bjvh8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

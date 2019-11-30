@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_camera_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:gravity="top">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/formlayout"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Step 1 of 3: Basic Details"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/subTitle">
+
+                <EditText
+                    android:id="@+id/personName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="44dp"
+                    android:ems="10"
+                    android:hint="Your Name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/personPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personName"
+                    android:ems="10"
+                    android:hint="Your Phone Number"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/personEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personPhone"
+                    android:ems="10"
+                    android:hint="Your Email Address"
+                    android:inputType="textEmailAddress" />
+
+
+                <Button
+                    android:id="@+id/btnToFrag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/personEmail"
+                    android:background="@color/colorPrimaryVeryDark"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Next"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/imageGridLayout"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/uploadsubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Step 2 of 3: Upload Photos"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/uploadsubTitle">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:foregroundGravity="center_horizontal"
+                    android:rowCount="6"
+                    android:columnCount="2"
+                    android:layout_alignParentTop="true">
+
+
+                    <ImageView
+                        android:id="@+id/imgLeaf2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:src="@drawable/placeholderleaf"/>
+
+                    <ImageView
+                        android:id="@+id/imgStem"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        android:src="@drawable/placeholderstem"/>
+
+                    <ImageView
+                        android:id="@+id/imgRoot"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:src="@drawable/placeholderroot"/>
+
+                    <ImageView
+                        android:id="@+id/imgOther"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:src="@drawable/placeholderother"/>
+                    <TextView
+                        android:id="@+id/latHead"
+                        android:layout_columnSpan="2"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Auto-Detected Latitude and Longitude"
+                        android:textSize="12sp"
+                        android:background="@color/input_login"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/editLat"
+                        android:layout_column="0"
+                        android:layout_row="3" />
+                    <EditText
+                        android:id="@+id/editLong"
+                        android:layout_column="1"
+                        android:layout_row="3" />
+
+                    <Button style="@style/Widget.AppCompat.Button.Colored"
+                        android:id="@+id/btnToFrag3"
+                        android:layout_row="4"
+                        android:layout_columnSpan="2"
+                        android:layout_column="0"
+                        android:layout_width="189dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimaryVeryDark"
+                        android:textColor="@color/cardview_light_background"
+                        android:text="Next"   />
+
+                    <Button
+                        android:id="@+id/btntoForm"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:layout_width="189dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimaryVeryDark"
+                        android:textColor="@color/cardview_light_background"
+                        android:text="Go Back"   />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/form2layout"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/subTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Step 3 of 3: Query Details and Submit"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/subTitle3">
+
+                <Spinner style="@android:style/Widget.Spinner"
+                    android:id="@+id/personCropSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/crop_prompt" />
+
+                <EditText
+                    android:id="@+id/personMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personCropSpinner"
+                    android:height="100dp"
+                    android:ems="10"
+                    android:hint="Your Query"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/btnToUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/personMessage"
+                    android:background="@color/colorPrimaryVeryDark"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Submit"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/btnToFrag2frm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnToUpload"
+                    android:background="@color/colorPrimaryVeryDark"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Go Back"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
