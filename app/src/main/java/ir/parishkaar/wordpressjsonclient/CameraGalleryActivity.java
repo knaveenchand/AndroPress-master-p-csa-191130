@@ -79,7 +79,8 @@ public class CameraGalleryActivity extends AppCompatActivity implements Location
             personLocationLat, personLocationLong;
 
     Bitmap stemtakenImage, leaftakenImage, roottakenImage, othertakenImage, takenImage;
-    String myurl = "http://salesapp.matenek.com/salesmatenek/navtests/photocsav3testing.php";
+    //idhane imp diak ... http://salesapp.matenek.com/salesmatenek/navtests/photocsav3testing.php
+    //String myurl = "imp url here";
 
     File photoFile;
     Spinner spinner2;
